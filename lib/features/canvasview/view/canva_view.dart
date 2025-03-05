@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
-import 'package:text_recognition_app/viewmodels/canvas_viemodel.dart';
+import 'package:text_recognition_app/features/canvasview/repositories/canvas_viemodel.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 class CanvasView extends StatelessWidget {
@@ -261,7 +261,8 @@ class CustomPainterWidget extends CustomPainter {
     // Problem: shouldRepaint always returns true in CustomPainterWidget.
 // Solution: Compare previous points for equality:
 
-     return !listEquals(oldDelegate.points, points);
+    //  return !listEquals(oldDelegate.points, points);
+    return true;
   }
 }
 

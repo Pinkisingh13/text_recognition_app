@@ -66,6 +66,7 @@ class CanvasViewModel extends ChangeNotifier {
   Future<void> recognizeText() async {
     isPredictionStart = true;
     notifyListeners();
+    
     final String apiKey = dotenv.env['API_KEY']! ;
 
     final String url =
