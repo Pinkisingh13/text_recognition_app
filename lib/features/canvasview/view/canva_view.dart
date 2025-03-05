@@ -1,8 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
-import 'package:text_recognition_app/features/canvasview/repositories/canvas_viemodel.dart';
+import 'package:text_recognition_app/features/canvasview/repositories/canvas_provider.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 class CanvasView extends StatelessWidget {
@@ -10,9 +9,11 @@ class CanvasView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final canvasProvider = context.watch<CanvasViewModel>();
+    final canvasProvider = context.watch<CanvasViewProvider>();
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        leading: IconButton(onPressed: ()=> Navigator.pop(context), icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,size: 17,)),
         title: Text("Canvas", style: TextStyle(color: Colors.white)),
         backgroundColor: Color(0xff2D336B),
       ),
@@ -76,7 +77,7 @@ class ButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final canvasProvider = context.watch<CanvasViewModel>();
+    final canvasProvider = context.watch<CanvasViewProvider>();
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
@@ -174,7 +175,7 @@ class CanvasBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final canvasProvider = context.watch<CanvasViewModel>();
+    final canvasProvider = context.watch<CanvasViewProvider>();
     return Container(
       margin: EdgeInsets.all(20),
       decoration: BoxDecoration(

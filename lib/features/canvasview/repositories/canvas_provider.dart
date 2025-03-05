@@ -7,7 +7,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:http/http.dart' as http;
 
-class CanvasViewModel extends ChangeNotifier {
+class CanvasViewProvider extends ChangeNotifier {
   List<Offset?> points = [];
   String prediction = "";
   String message = "Start writing and let AI predict!";
