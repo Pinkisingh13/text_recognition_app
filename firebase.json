@@ -1,1 +1,2 @@
 {"flutter":{"platforms":{"android":{"default":{"projectId":"digit-recognition-app-d5453","appId":"1:149780553561:android:f2541a41abd4466478f648","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"digit-recognition-app-d5453","configurations":{"android":"1:149780553561:android:f2541a41abd4466478f648","ios":"1:149780553561:ios:8d05f26786b5e2b878f648","web":"1:149780553561:web:59db0c2f1b696f5378f648"}}}}}}
+

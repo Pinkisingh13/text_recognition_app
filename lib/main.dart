@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => CanvasViewProvider()),
-        ChangeNotifierProvider(create: (context) => ImageviewProvider()),
+        // ChangeNotifierProvider(create: (context) => ImageviewProvider()),
       ],
 
       child: MaterialApp(
@@ -36,9 +36,9 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => Homescreen(),
           '/canvasview': (context) => CanvasView(),
-          '/imageview': (context) => ImageView(),
+          // '/imageview': (context) => ImageView(),
         },
-        title: 'Flutter Demo',
+        title: 'Text Recognition App',
         debugShowCheckedModeBanner: false,
       ),
     );

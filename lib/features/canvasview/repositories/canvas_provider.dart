@@ -63,6 +63,7 @@ class CanvasViewProvider extends ChangeNotifier {
     return uint8List;
   }
 
+
   Future<void> recognizeText() async {
     isPredictionStart = true;
     notifyListeners();
