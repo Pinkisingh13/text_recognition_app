@@ -32,12 +32,13 @@ class MyApp extends StatelessWidget {
 
       child: MaterialApp(
         builder: EasyLoading.init(),
-        initialRoute: '/',
-        routes: {
-          '/': (context) => Homescreen(),
-          '/canvasview': (context) => CanvasView(),
-          // '/imageview': (context) => ImageView(),
-        },
+        // initialRoute: '/',
+        // routes: {
+        //   // '/': (context) => Homescreen(),
+        //   '/canvasview': (context) => CanvasView(),
+        //   // '/imageview': (context) => ImageView(),
+        // },
+        home:   CanvasView(),
         title: 'Text Recognition App',
         debugShowCheckedModeBanner: false,
       ),

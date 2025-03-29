@@ -13,7 +13,7 @@ class CanvasView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        leading: IconButton(onPressed: ()=> Navigator.pop(context), icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,size: 17,)),
+        // leading: IconButton(onPressed: ()=> Navigator.pop(context), icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,size: 17,)),
         title: Text("Canvas", style: TextStyle(color: Colors.white)),
         backgroundColor: Color(0xff2D336B),
       ),
